@@ -14,7 +14,9 @@ const userSchema = new Schema({
     password: {
         type: 'string',
         required: true
-    },{timestamps: true}
+    },
+},
+{timestamps: true}
 );
 
 const User = mongoose.model('User', userSchema);
