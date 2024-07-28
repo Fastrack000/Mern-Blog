@@ -9,8 +9,6 @@ import {
 } from "../redux/user/userSlice";
 
 import OAuth from "../components/OAuth";
-//uyfguyfutf
-//jkhgjyfyfu 
 
 export default function SignIn() {
   const [formData, setFormData] = useState({});
