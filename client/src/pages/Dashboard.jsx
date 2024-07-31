@@ -10,7 +10,7 @@ export default function Dashboard() {
     const urlParams = new URLSearchParams(location.search);
     const tabFromUrl = urlParams.get('tab');
     if (tabFromUrl) {
-      setTab(tabFromUrl);
+            setTab(tabFromUrl);
     }
   }, [location.search]);
   return (
@@ -20,7 +20,7 @@ export default function Dashboard() {
         <DashSidebar />
       </div>
       {/* profile... */}
-      {tab === 'profile' && <DashProfile />}
+      {tab === 'profile' && <DashProfile />  }
     </div>
   );
 }

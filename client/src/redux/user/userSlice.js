@@ -71,3 +71,7 @@ export const {
 } = userSlice.actions;
 
 export default userSlice.reducer;
+// redux
+// constextAPI
+// reducer 
+// state

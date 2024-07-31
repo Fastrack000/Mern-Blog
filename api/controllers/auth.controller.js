@@ -56,7 +56,7 @@ export const signin = async (req, res, next) => {
 
     const { password: pass, ...rest } = validUser._doc;
 
-    res
+     res
       .status(200)
       .cookie('access_token', token, {
         httpOnly: true,
@@ -86,7 +86,7 @@ export const google = async (req, res, next) => {
     } else {
       const generatedPassword =
         Math.random().toString(36).slice(-8) +
-        Math.random().toString(36).slice(-8);
+        Math.random().toString(36).slice(-8); 
       const hashedPassword = bcryptjs.hashSync(generatedPassword, 10);
       const newUser = new User({
         username:
