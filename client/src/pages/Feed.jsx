@@ -1,6 +1,3 @@
-
-export default function Projects() {
-  return (
-    <div>Projects</div>
-  )
+export default function Feeds() {
+  return <div>Feeds</div>;
 }
